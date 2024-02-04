@@ -5,7 +5,7 @@ import tkinter as tk
 from tkinter import filedialog
 
 # Import the pyttsx3 module for text-to-speech conversion
-import pyttsx3
+import pyttsx3  
 
 # Import the PIL module, specifically the Image and ImageTk modules
 from PIL import Image, ImageTk
@@ -30,8 +30,10 @@ class SpeakingAvatar:
 
     def create_gui(self):
         # Text Entry
+        # Create a text entry widget within the root window with a width of 40 characters
         self.text_entry = tk.Entry(self.root, width=40)
         self.text_entry.pack(pady=10)
+        # Pack the text entry widget with a vertical padding of 10 units
 
         # Speak Button
         speak_button = tk.Button(self.root, text="Speak", command=self.speak_text)
@@ -39,9 +41,11 @@ class SpeakingAvatar:
 
         # Image Display
         self.avatar_image = Image.open("C:\\Users\\Lenovo\\Desktop\\man.gif")
- # Replace "avatar.png" with your avatar image
+        # Replace "avatar.png" with your avatar image
         self.avatar_photo = ImageTk.PhotoImage(self.avatar_image)
+        # Create a label within the root window and set its image to the avatar PhotoImage
         self.avatar_label = tk.Label(self.root, image=self.avatar_photo)
+        # Pack the avatar label with a vertical padding of 10 units
         self.avatar_label.pack(pady=10)
 
         # Load Image Button
