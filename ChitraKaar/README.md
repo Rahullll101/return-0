@@ -1,4 +1,11 @@
 # ChitraKaar
+
+### Screen Recording
+
+
+https://github.com/VinsmokeSomya/return-0/assets/117063787/7b27d4b9-7f4b-4d2f-9dc0-a2f52ec788cf
+
+
 **Usage:**
 1. Open the provided Python script ChitraKaar.py in your preferred code editor.
 2. Replace the placeholder values in the script as needed (e.g., model name, GPU device, etc.).
